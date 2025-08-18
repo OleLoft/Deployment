@@ -9,9 +9,6 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  destination:
-    namespace: nginx
-    name: in-cluster
   template:
     metadata:
       labels:
