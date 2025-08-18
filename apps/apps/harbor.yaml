@@ -11,7 +11,7 @@ spec:
     name: in-cluster
   project: default
   source:
-    repoURL: https://aquasecurity.github.io/helm-charts/
+    repoURL: oci://registry-1.docker.io/bitnamicharts/harbor
     targetRevision: HEAD
   syncPolicy:
     automated:
