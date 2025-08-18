@@ -11,7 +11,7 @@ spec:
     name: in-cluster
   project: default
   source:
-    repoURL: oci://registry-1.docker.io/bitnamicharts/harbor
+    repoURL: https://helm.goharbor.io
     targetRevision: HEAD
   syncPolicy:
     automated:
