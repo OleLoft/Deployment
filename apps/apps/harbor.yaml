@@ -4,14 +4,13 @@ metadata:
   name: guestbook
   namespace: argocd
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: harbor
     name: in-cluster
   project: default
   source:
-    path: ./
     repoURL: https://aquasecurity.github.io/helm-charts/
     targetRevision: HEAD
   syncPolicy:
